@@ -1,8 +1,5 @@
-
 import 'package:store_app/helper/api.dart';
-
 import '../models/product_model.dart';
-
 
 class AllProductsService {
   Future<List<ProductModel>> getAllProducts() async {
@@ -14,6 +11,5 @@ class AllProductsService {
         );
       }
       return productsList;
-
   }
 }
