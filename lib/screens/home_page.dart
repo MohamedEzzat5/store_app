@@ -18,13 +18,13 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.white,
           elevation: 0,
           centerTitle: true,
-          title: Text(
+          title: const Text(
             'New Trend',
             style: TextStyle(color: Colors.black),
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.shopping_cart,color: Colors.black,),
+              icon:const  Icon(Icons.shopping_cart,color: Colors.black,),
               onPressed: () {},
             ),
           ],
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                     }
                   );
                 }else {
-                  return Center(child: CircularProgressIndicator(strokeWidth: 3,));
+                  return const Center(child: CircularProgressIndicator(strokeWidth: 3,));
                 }
               })
         ));

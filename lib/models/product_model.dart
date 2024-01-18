@@ -2,7 +2,7 @@ class ProductModel {
   final dynamic id;
   final String title;
   final double price;
-  final String descriptin;
+  final String description;
   final String category;
   final String image;
   final RatingModel rating;
@@ -10,7 +10,7 @@ class ProductModel {
     required this.id,
     required this.title,
     required this.image,
-    required this.descriptin,
+    required this.description,
     required this.price,
     required this.rating,
     required this.category,
@@ -21,7 +21,7 @@ class ProductModel {
       id: jsonData ['id'],
       title: jsonData ['title'],
       image: jsonData ['image'],
-      descriptin: jsonData ['description'],
+      description: jsonData ['description'],
       price: jsonData ['price'],
       category: jsonData['category'],
       rating: RatingModel.fromJson(jsonData['rating']),

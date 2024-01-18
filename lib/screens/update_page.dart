@@ -9,7 +9,7 @@ import 'package:store_app/widgets/custom_buttton.dart';
 import 'package:store_app/widgets/custom_text_field.dart';
 
 class UpdateScreen extends StatefulWidget {
-  UpdateScreen({super.key});
+  const UpdateScreen({super.key});
 
   static String id = 'UpdateScreen';
 
@@ -28,13 +28,13 @@ class _UpdateScreenState extends State<UpdateScreen> {
       inAsyncCall:  isLoading,
       child: Scaffold(
           appBar: AppBar(
-            iconTheme: IconThemeData(
+            iconTheme: const IconThemeData(
               color: Colors.black,
             ),
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
-            title: Text(
+            title: const Text(
               'Update Product',
               style: TextStyle(color: Colors.black),
             ),
@@ -45,14 +45,14 @@ class _UpdateScreenState extends State<UpdateScreen> {
               child: Column(
 
                 children: [
-                  SizedBox(height: 100,),
+                  const SizedBox(height: 100,),
                   CustomTextField(
                     hintText: 'Product Name',
                     onChanged: (data) {
                       productName = data;
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   CustomTextField(
@@ -61,7 +61,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                       description = data;
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   CustomTextField(
@@ -113,7 +113,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
         id: product.id,
         title: productName == null ? product.title : productName!,
         price: price == null ? product.price.toString() : price!,
-        description: description == null ? product.descriptin : description!,
+        description: description == null ? product.description : description!,
         image: image == null ? product.image : image!,
         category: product.category);
 

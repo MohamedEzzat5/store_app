@@ -13,7 +13,7 @@ class Api {
       return jsonDecode(response.body);
     } else {
       throw Exception(
-          'there is a problem whith status code ${response.statusCode}');
+          'there is a problem with status code ${response.statusCode}');
     }
   }
 
